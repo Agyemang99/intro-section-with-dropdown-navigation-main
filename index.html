@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="profile-container">
+
+    <header class="header">
+
+      <div class="left-header">
+
+        <div class="logo-link">
+          <div class="logo-pic">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="header-details">
+            <div class="header-link">
+              
+              <button id="menu-btn" class="menu-btn">
+                <img src="./images/icon-menu.svg" alt="icon-menu">
+              </button>
+              
+              <div class="inside-header" id="inside-header">
+                
+                <button type="button" class="close-btn" id="close-btn">
+                  <img src="./images/icon-close-menu.svg" alt="icon-close-menu" class="close-menu">
+                </button>
+                
+                <div class="select-menu">
+                  <div class="feature">
+                    <a href="#">Features
+                      <button id="feature-btn" type="submit" class="feature-btn"><img src="./images/icon-arrow-down.svg" ></button>
+                    </a>
+                  </div>
+                
+                  <div class="ft-option">
+                    <ul class="options">
+                      <li class="option"><img src="./images/icon-todo.svg" alt="icon-todo"> Todo List</li>
+                      <li class="option"><img src="./images/icon-calendar.svg" alt="icon-calendar"> Calender</li>
+                      <li class="option"><img src="./images/icon-reminders.svg" alt="icon-reminders"> Reminders</li>
+                      <li class="option"><img src="./images/icon-planning.svg" alt="icon-planning"> Planning</li>
+                    </ul>
+                  </div>
+
+                </div>
+                
+                <div class="select-menu2">
+                  <div>
+                    <a href="#">Company
+                      <button id="company-btn" class="company-btn"><img src="./images/icon-arrow-down.svg" ></button>
+                    </a>
+                  </div>
+
+                  <div>
+                    <ul class="options2">
+                      <li class="option">History</li>
+                      <li class="option">Our team</li>
+                      <li class="option">Blog</li>
+                    </ul>
+                  </div>
+
+                </div>
+                
+                <a href="#">Careers</a>
+                <a href="#">About</a>
+              </div>
+
+              <div id="target-div"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="input-container" id="input-container">
+        <div class="login-container">
+          <button id="login-btn" class="login-btn">Login</button>
+        </div>
+        <div  class="register-container">
+          <div >
+            <button id="register-btn" class="register-btn">Register</button>
+          </div>
+          <div id="register-form" class="register-form">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your name" id="name">
+            <label for="email">Email</label>
+            <input type="email" placeholder="@gmail/yahoomail" id="email">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <select name="sex" id="sex">
+              <option value="male">M</option>
+              <option value="female">F</option>
+            </select>
+            <button type="submit">Submit Form</button>
+          </div> 
+        </div>
+          
+      </div>
+    
+    </header>
+
+    <main class="main">
+      <div class="picture">
+        <picture>
+          <source srcset="./images/image-hero-desktop.png" media="(min-width:1025px)">
+          <img src="./images/image-hero-mobile.png" alt="hero-image" class="hero-image" >
+        <picture>
+      </div>
+      <div class="detailed-container">
+        <div class="content-container">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          <button type="submit" id="submit-btn" class="submit-btn">Learn more</button>
+        </div>
+        <div class="social-icons">
+          <img src="./images/client-databiz.svg" alt="client-databiz">
+          <img src="./images/client-audiophile.svg" alt="client-audiophile">
+          <img src="./images/client-meet.svg" alt="client-meet">
+          <img src="./images/client-maker.svg" alt="client-maker">
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>

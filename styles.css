@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --light-grey:hsl(0,0%,80%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --violet:hsl(228, 45%, 44%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Epilogue";
+}
+body{
+    background-color: var(--Almost-White);
+}
+a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+    font-weight:500;
+}
+.login-btn{
+    border: none;
+    background-color:var(--Almost-White);
+    color: var(--Medium-Gray);
+}
+
+.register-btn{
+    padding: 10px;
+    background-color:var(--Almost-White);
+    border-radius:10px;
+    border: 1px solid var(--Medium-Gray);
+    color: var(--Medium-Gray);
+}
+
+.submit-btn{
+    padding:10px;
+    border-radius: 10px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border: none;
+    font-weight: 700;
+}
+.submit-btn:hover{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid var(--Almost-Black);
+}
+button{
+    cursor: pointer;
+}
+select{
+    border: none;
+}
+
+.feature-btn,.company-btn{
+    background: none;
+    color: var(--Almost-Black);
+    border: none;
+    transition: 0.2s;
+}
+
+
+.profile-container{
+    margin: 1rem;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-icons img{
+    height:fit-content;
+}
+
+p{
+    color: var(--Medium-Gray);
+}
+li{
+    list-style: none;
+    margin: 10px;
+    color: var(--Medium-Gray);
+    font-weight:500;
+}
+
+ul{
+    margin-top: 1rem;
+    box-shadow: 0 0 3px;
+    padding: 10px;
+}
+.options{   
+    display: none;
+}
+
+.options2{
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+.select-menu2.active .options2{
+    display: block;
+}
+.select-menu.active .feature-btn{
+    transform: rotate(-180deg);
+}
+.select-menu2.active .company-btn{
+    transform: rotate(-180deg);
+}
+
+.close-btn{
+    background-color:unset;
+    border: none;
+    display: none;
+}
+
+.log input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--Medium-Gray);
+}
+.register-form{
+    display:none;
+    box-shadow: 0 0 3px;
+    padding: 20px;
+    background-color: var(--Medium-Gray);
+    margin-top: 10px;
+}
+.register-form label{
+    color: var(--Almost-White);
+}
+.register-container.active .register-form{
+    display: block;
+}
+
+.register-container{
+    display: block;
+    max-width:200px;
+}
+.register-form input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.register-form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: var(--violet);
+    border-radius: 5px;
+}
+
+
+
+
+@media screen and (min-width:480px) {
+    .header-link{
+        display: block;
+    }
+    .hero-image{
+        width:430px;
+    }
+   
+    .inside-header{
+        display: none;
+    }
+
+    h1,p{
+        text-align: center;
+    }
+    .submit-btn{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .header,.content-container,.social-icons{
+        margin: 1rem;
+    }
+    picture{
+        margin: 1rem; 
+    }
+    .content-container button{
+        margin-bottom: 2rem;
+    }
+    .content-container h1,p{
+        margin-bottom: 1rem;
+    }
+    .menu-btn{
+        background-color:unset;
+        border: none;
+    }
+    .input-container{
+        display: none;
+    }
+   .logo-link{
+    display: flex;
+    justify-content: space-between;
+   }
+
+  
+   .profile-container.active .header{
+        background-color: white;
+        display:block;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        grid-column: 2/2;
+        grid-row: 1/3;
+        padding-left: 40px;
+        padding-top: 80px;
+   }
+
+   .profile-container.active .logo-pic{
+        position: absolute;
+        left: 10%;
+        top:10px;
+   }
+
+   .profile-container.active .main{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        grid-column: 1/1;
+        grid-row: 1/-1;
+        background-color: rgba(0,0,0,.4);
+   }
+   .profile-container.active{
+        display: grid;
+        grid-template-columns:180px 1fr;
+        grid-template-rows:40px 1fr;
+        margin: 0;
+        padding: 0;
+        position:relative;
+   }
+   .profile-container.active .inside-header{
+    display: block;
+   }
+   .profile-container.active a{
+    display: block;
+    margin-bottom: 1rem;
+   }
+   .profile-container.active .input-container{
+    display: block;
+    margin: 20px;
+    padding-left: 10px;
+   }
+   .profile-container.active .picture{
+    margin-top: 4rem;
+   }
+
+   .profile-container.active .register-btn{
+        width: 100%;
+        margin-top: 1rem;
+        background-color: white;
+   }
+   .profile-container.active .login-container{
+        margin-left: 4rem;
+   }
+   .profile-container.active ul{
+    box-shadow: unset;
+   }
+   .profile-container.active .menu-btn{
+        display: none;
+   }
+   .profile-container.active .close-btn{
+        display: block;
+        position: absolute;
+        top:2%;
+        right: 5%;
+        transition: 0.2s;
+   }
+    
+}
+
+
+
+@media screen and (min-width:1025px) {
+    .profile-container{
+        min-height: 100vh;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: 4rem;
+
+    }
+    h1,p{
+        text-align:start;
+        margin-bottom: 2rem;
+    }
+    h1{
+      font-size: 5em; 
+    }
+    .submit-btn{
+        position: relative;
+        left:9%;
+    }
+    .detailed-container{
+        margin: 2rem;
+    }
+    .picture{
+        margin: 2rem;
+    }
+    .picture img{
+        height:500px;
+    }
+    .content-container button{
+        margin-bottom: 10rem;
+    }
+
+    .input-container{
+        display:flex;
+    }
+    .menu-btn{
+        display: none;
+    }
+    
+    .header{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    .logo-link{
+        display: flex;
+        margin-top:10px;
+    }
+    .inside-header{
+       display:flex;
+    }
+    /* .main{
+        margin-top: -1rem;
+    } */
+    a{
+        margin-left: 1rem;
+    }
+    .login-btn{
+        margin-right: 1rem;
+        margin-top: 10px;
+    }
+    .logo-link img{
+        margin-right: 1rem;
+    }
+
+    
+    
+}
